@@ -1,0 +1,22 @@
+Finance — Credit Risk Validation
+================================
+Generated: 2026-10-13 19:31:09 UTC
+
+
+File: E:\SHAP-Explainable-ML\dataset\credit_risk_dataset.csv
+
+Row count: 32581 (expected 32581)
+Target loan_status: 0=25473 (expected 25473), 1=7108 (expected 7108)
+Missing person_emp_length: 895 (imputed in train-only finance pipeline)
+Missing loan_int_rate: 3116 (imputed in train-only finance pipeline)
+Rows with person_age > 100 (before split): 5
+Rows with person_emp_length > person_age (before split): 2
+
+Pre-split cleaning (preprocessing):
+  - person_age > 100: cap at 100 (preserves rows; documented in preprocessing report).
+  - person_emp_length > person_age: drop those rows (logical inconsistency).
+
+Required columns present (loan_grade, loan_int_rate): True
+Categorical encoding plan: OneHotEncoder(handle_unknown='ignore').
+
+Audit check: PASS

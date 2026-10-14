@@ -1,0 +1,43 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+Thumbs.db
+.Desktop.ini
+
+# Local env secrets (if any)
+.env
+.env.local
+
+# Type-checker cache
+.mypy_cache/
+
+# Leftover shell artefacts
+2.6.0
+predict
+'
+
+# Optional: large generated artifacts (keep reports/pipelines tracked if desired)
+# outputs/figures/*.png

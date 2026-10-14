@@ -1,0 +1,113 @@
+domain,model,rank,feature,mean_abs_shap
+healthcare,XGBoost,1,texture_worst,1.370456
+healthcare,XGBoost,2,perimeter_worst,1.020217
+healthcare,XGBoost,3,area_se,0.947033
+healthcare,XGBoost,4,radius_worst,0.929832
+healthcare,XGBoost,5,concave_pts_mean,0.879582
+healthcare,XGBoost,6,concave_pts_worst,0.847625
+healthcare,XGBoost,7,compactness_se,0.808232
+healthcare,XGBoost,8,concavity_worst,0.711917
+healthcare,XGBoost,9,concave_pts_se,0.677906
+healthcare,XGBoost,10,area_worst,0.671971
+healthcare,XGBoost,11,symmetry_worst,0.570523
+healthcare,XGBoost,12,texture_mean,0.558346
+healthcare,XGBoost,13,smoothness_mean,0.545098
+healthcare,XGBoost,14,symmetry_se,0.308984
+healthcare,XGBoost,15,compactness_mean,0.261461
+healthcare,XGBoost,16,smoothness_worst,0.256146
+healthcare,XGBoost,17,concavity_mean,0.20023
+healthcare,XGBoost,18,radius_se,0.170505
+healthcare,XGBoost,19,concavity_se,0.116473
+healthcare,XGBoost,20,compactness_worst,0.11498
+healthcare,XGBoost,21,smoothness_se,0.091277
+healthcare,XGBoost,22,area_mean,0.090504
+healthcare,XGBoost,23,perimeter_se,0.087661
+healthcare,XGBoost,24,fractal_dim_se,0.081827
+healthcare,XGBoost,25,symmetry_mean,0.070763
+healthcare,XGBoost,26,radius_mean,0.06889
+healthcare,XGBoost,27,fractal_dim_worst,0.04561
+healthcare,XGBoost,28,fractal_dim_mean,0.036644
+healthcare,XGBoost,29,texture_se,0.030167
+healthcare,XGBoost,30,perimeter_mean,0.005113
+healthcare,Logistic Regression,1,texture_worst,1.272242
+healthcare,Logistic Regression,2,radius_se,0.806759
+healthcare,Logistic Regression,3,symmetry_worst,0.752182
+healthcare,Logistic Regression,4,compactness_se,0.734668
+healthcare,Logistic Regression,5,concave_pts_mean,0.724239
+healthcare,Logistic Regression,6,concavity_worst,0.708728
+healthcare,Logistic Regression,7,radius_worst,0.681794
+healthcare,Logistic Regression,8,area_worst,0.645446
+healthcare,Logistic Regression,9,concave_pts_worst,0.592129
+healthcare,Logistic Regression,10,concavity_mean,0.544849
+healthcare,Logistic Regression,11,perimeter_worst,0.530833
+healthcare,Logistic Regression,12,area_se,0.495061
+healthcare,Logistic Regression,13,perimeter_se,0.447516
+healthcare,Logistic Regression,14,concave_pts_se,0.414962
+healthcare,Logistic Regression,15,compactness_mean,0.391133
+healthcare,Logistic Regression,16,fractal_dim_se,0.377717
+healthcare,Logistic Regression,17,texture_mean,0.354956
+healthcare,Logistic Regression,18,texture_se,0.29138
+healthcare,Logistic Regression,19,area_mean,0.285519
+healthcare,Logistic Regression,20,smoothness_mean,0.262383
+healthcare,Logistic Regression,21,symmetry_se,0.253197
+healthcare,Logistic Regression,22,radius_mean,0.236303
+healthcare,Logistic Regression,23,perimeter_mean,0.23134
+healthcare,Logistic Regression,24,smoothness_worst,0.222656
+healthcare,Logistic Regression,25,smoothness_se,0.188152
+healthcare,Logistic Regression,26,symmetry_mean,0.154061
+healthcare,Logistic Regression,27,compactness_worst,0.142293
+healthcare,Logistic Regression,28,concavity_se,0.075918
+healthcare,Logistic Regression,29,fractal_dim_worst,0.05674
+healthcare,Logistic Regression,30,fractal_dim_mean,0.028434
+finance,XGBoost,1,person_income,1.099495
+finance,XGBoost,2,loan_percent_income,0.853419
+finance,XGBoost,3,loan_int_rate,0.593125
+finance,XGBoost,4,person_home_ownership_OWN,0.435658
+finance,XGBoost,5,person_home_ownership_RENT,0.380289
+finance,XGBoost,6,loan_intent_VENTURE,0.368734
+finance,XGBoost,7,loan_amnt,0.277193
+finance,XGBoost,8,loan_grade_A,0.270038
+finance,XGBoost,9,loan_grade_D,0.24422
+finance,XGBoost,10,loan_intent_HOMEIMPROVEMENT,0.185956
+finance,XGBoost,11,person_emp_length,0.171508
+finance,XGBoost,12,loan_intent_DEBTCONSOLIDATION,0.156179
+finance,XGBoost,13,loan_grade_B,0.148724
+finance,XGBoost,14,person_age,0.136168
+finance,XGBoost,15,loan_intent_MEDICAL,0.102479
+finance,XGBoost,16,person_home_ownership_MORTGAGE,0.10241
+finance,XGBoost,17,loan_grade_C,0.097263
+finance,XGBoost,18,loan_grade_E,0.094761
+finance,XGBoost,19,loan_intent_EDUCATION,0.065597
+finance,XGBoost,20,cb_person_cred_hist_length,0.046766
+finance,XGBoost,21,loan_grade_F,0.03137
+finance,XGBoost,22,loan_intent_PERSONAL,0.023086
+finance,XGBoost,23,cb_person_default_on_file_N,0.020219
+finance,XGBoost,24,loan_grade_G,0.012416
+finance,XGBoost,25,cb_person_default_on_file_Y,0.006185
+finance,XGBoost,26,person_home_ownership_OTHER,0.000708
+finance,Logistic Regression,1,loan_percent_income,1.073966
+finance,Logistic Regression,2,loan_grade_A,0.855487
+finance,Logistic Regression,3,loan_grade_B,0.718667
+finance,Logistic Regression,4,loan_amnt,0.533179
+finance,Logistic Regression,5,loan_grade_C,0.521651
+finance,Logistic Regression,6,person_home_ownership_RENT,0.429642
+finance,Logistic Regression,7,loan_int_rate,0.204627
+finance,Logistic Regression,8,person_home_ownership_OWN,0.195906
+finance,Logistic Regression,9,loan_intent_VENTURE,0.181532
+finance,Logistic Regression,10,loan_intent_HOMEIMPROVEMENT,0.143137
+finance,Logistic Regression,11,person_home_ownership_MORTGAGE,0.108867
+finance,Logistic Regression,12,loan_intent_DEBTCONSOLIDATION,0.100621
+finance,Logistic Regression,13,loan_grade_D,0.092945
+finance,Logistic Regression,14,loan_intent_EDUCATION,0.086238
+finance,Logistic Regression,15,loan_intent_MEDICAL,0.074593
+finance,Logistic Regression,16,cb_person_default_on_file_Y,0.039571
+finance,Logistic Regression,17,loan_grade_E,0.034542
+finance,Logistic Regression,18,cb_person_default_on_file_N,0.03328
+finance,Logistic Regression,19,loan_grade_F,0.026674
+finance,Logistic Regression,20,loan_intent_PERSONAL,0.022552
+finance,Logistic Regression,21,person_income,0.013841
+finance,Logistic Regression,22,person_age,0.010464
+finance,Logistic Regression,23,person_emp_length,0.006555
+finance,Logistic Regression,24,loan_grade_G,0.004857
+finance,Logistic Regression,25,person_home_ownership_OTHER,0.001977
+finance,Logistic Regression,26,cb_person_cred_hist_length,0.000385

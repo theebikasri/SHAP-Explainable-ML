@@ -1,0 +1,5 @@
+domain,label,accuracy,precision,recall,f1,roc_auc,tn,fp,fn,tp,cv_roc_auc_mean,cv_roc_auc_std
+healthcare,Logistic Regression,0.9737,0.9756,0.9524,0.9639,0.9954,71,1,2,40,0.9954,0.0048
+healthcare,XGBoost,0.9825,1.0,0.9524,0.9756,0.9917,72,0,2,40,0.9944,0.0034
+finance,Logistic Regression,0.8095,0.5449,0.7835,0.6428,0.8704,4137,928,307,1111,0.8706,0.0053
+finance,XGBoost,0.9136,0.7918,0.8209,0.8061,0.9518,4759,306,254,1164,0.9497,0.0052

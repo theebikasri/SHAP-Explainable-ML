@@ -1,0 +1,96 @@
+[
+  {
+    "label": "Logistic Regression",
+    "accuracy": 0.9737,
+    "precision": 0.9756,
+    "recall": 0.9524,
+    "f1": 0.9639,
+    "roc_auc": 0.9954,
+    "tn": 71,
+    "fp": 1,
+    "fn": 2,
+    "tp": 40,
+    "classification_report": "              precision    recall  f1-score   support\n\n     class_0       0.97      0.99      0.98        72\n     class_1       0.98      0.95      0.96        42\n\n    accuracy                           0.97       114\n   macro avg       0.97      0.97      0.97       114\nweighted avg       0.97      0.97      0.97       114\n",
+    "cv_roc_auc_mean": 0.9954,
+    "cv_roc_auc_std": 0.0048,
+    "best_params": {
+      "class_weight": "balanced",
+      "max_iter": 2000,
+      "solver": "lbfgs"
+    },
+    "domain": "healthcare"
+  },
+  {
+    "label": "XGBoost",
+    "accuracy": 0.9825,
+    "precision": 1.0,
+    "recall": 0.9524,
+    "f1": 0.9756,
+    "roc_auc": 0.9917,
+    "tn": 72,
+    "fp": 0,
+    "fn": 2,
+    "tp": 40,
+    "classification_report": "              precision    recall  f1-score   support\n\n     class_0       0.97      1.00      0.99        72\n     class_1       1.00      0.95      0.98        42\n\n    accuracy                           0.98       114\n   macro avg       0.99      0.98      0.98       114\nweighted avg       0.98      0.98      0.98       114\n",
+    "cv_roc_auc_mean": 0.9944,
+    "cv_roc_auc_std": 0.0034,
+    "best_params": {
+      "n_estimators": 377,
+      "max_depth": 7,
+      "learning_rate": 0.2587705143389706,
+      "subsample": 0.8523614272706045,
+      "colsample_bytree": 0.7201277922572297,
+      "min_child_weight": 1,
+      "scale_pos_weight": 1.6764705882352942,
+      "random_state": 42
+    },
+    "domain": "healthcare"
+  },
+  {
+    "label": "Logistic Regression",
+    "accuracy": 0.8095,
+    "precision": 0.5449,
+    "recall": 0.7835,
+    "f1": 0.6428,
+    "roc_auc": 0.8704,
+    "tn": 4137,
+    "fp": 928,
+    "fn": 307,
+    "tp": 1111,
+    "classification_report": "              precision    recall  f1-score   support\n\n     class_0       0.93      0.82      0.87      5065\n     class_1       0.54      0.78      0.64      1418\n\n    accuracy                           0.81      6483\n   macro avg       0.74      0.80      0.76      6483\nweighted avg       0.85      0.81      0.82      6483\n",
+    "cv_roc_auc_mean": 0.8706,
+    "cv_roc_auc_std": 0.0053,
+    "best_params": {
+      "class_weight": "balanced",
+      "max_iter": 2000,
+      "solver": "lbfgs"
+    },
+    "domain": "finance"
+  },
+  {
+    "label": "XGBoost",
+    "accuracy": 0.9136,
+    "precision": 0.7918,
+    "recall": 0.8209,
+    "f1": 0.8061,
+    "roc_auc": 0.9518,
+    "tn": 4759,
+    "fp": 306,
+    "fn": 254,
+    "tp": 1164,
+    "classification_report": "              precision    recall  f1-score   support\n\n     class_0       0.95      0.94      0.94      5065\n     class_1       0.79      0.82      0.81      1418\n\n    accuracy                           0.91      6483\n   macro avg       0.87      0.88      0.88      6483\nweighted avg       0.91      0.91      0.91      6483\n",
+    "cv_roc_auc_mean": 0.9497,
+    "cv_roc_auc_std": 0.0052,
+    "best_params": {
+      "n_estimators": 459,
+      "max_depth": 4,
+      "learning_rate": 0.11988347780940341,
+      "subsample": 0.9753037938856164,
+      "colsample_bytree": 0.9945105856161021,
+      "min_child_weight": 8,
+      "scale_pos_weight": 3.57336860670194,
+      "random_state": 42
+    },
+    "domain": "finance"
+  }
+]

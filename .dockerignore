@@ -1,0 +1,52 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python caches
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Version control
+.git/
+.gitignore
+
+# IDE / tooling
+.idea/
+.vscode/
+.mypy_cache/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS artefacts
+Thumbs.db
+.DS_Store
+.Desktop.ini
+
+# Secrets / local env
+.env
+.env.local
+*.pem
+*.key
+
+# Leftover shell artefacts in project root
+2.6.0
+predict
+'
+
+# Validation scripts (not needed at runtime)
+validate_stage2.py
+validate_stage3.py
+validate_stage4.py
+validate_stage5.py
+validate_stage6.py

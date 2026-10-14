@@ -1,0 +1,28 @@
+Stage 2 — Preprocessing Summary
+================================
+Generated: 2026-10-13 19:31:00 UTC
+
+No classifier or SHAP steps were run in this stage.
+
+Healthcare (breast cancer)
+---------------------------
+Rows: 569 | Features: 30
+Train/test: 455 / 114 (stratified, shuffle=True)
+Malignant rate train/test: 0.3736 / 0.3684
+Processed shapes train/test: (455, 30) / (114, 30)
+Pipeline: E:\SHAP-Explainable-ML\models\healthcare_preprocessor.joblib
+Split bundle: E:\SHAP-Explainable-ML\models\healthcare_train_test_split.joblib
+
+Finance (credit risk)
+---------------------
+Rows before cleaning: 32581
+Step 1 — Age > 100 capped at 100: 5 rows corrected | rows remaining: 32581
+Step 2 — Dropped (emp_length > age): 2 rows | rows remaining: 32579
+Step 3 — Dropped exact duplicates: 165 rows | rows remaining: 32414
+Rows after all cleaning: 32414
+Train/test: 25931 / 6483 (stratified, shuffle=True)
+Default rate train/test: 0.2187 / 0.2187
+Processed shapes train/test: (25931, 26) / (6483, 26)
+Transformed feature count: 26
+Pipeline: E:\SHAP-Explainable-ML\models\finance_preprocessor.joblib
+Split bundle: E:\SHAP-Explainable-ML\models\finance_train_test_split.joblib

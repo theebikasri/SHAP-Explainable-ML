@@ -1,0 +1,98 @@
+Stage 4 — SHAP Interpretation Summary
+======================================
+Generated: 2026-10-13 19:40:39 UTC
+
+SHAP values represent additive contributions to the model's raw log-odds
+output (margin space). They are NOT probabilities and do NOT establish
+causation. A high SHAP value for a feature means the model attributed
+more weight to that feature for this prediction — it does not mean
+changing the feature will change the real-world outcome.
+
+DISCLAIMER — Healthcare: educational only, not a medical diagnosis.
+DISCLAIMER — Finance: educational only, not an official lending decision.
+
+Healthcare — XGBoost Top-10 Global Features (mean |SHAP|)
+-------------------------------------------------------
+  texture_worst                       1.370456
+  perimeter_worst                     1.020217
+  area_se                             0.947033
+  radius_worst                        0.929832
+  concave_pts_mean                    0.879582
+  concave_pts_worst                   0.847625
+  compactness_se                      0.808232
+  concavity_worst                     0.711917
+  concave_pts_se                      0.677906
+  area_worst                          0.671971
+
+Healthcare — Local Examples
+-------------------------------------------------------
+  Role: correct_positive  |  Sample: 1
+  Actual: Malignant  |  Predicted: Malignant  |  Prob: 1.0000
+  Top contributions:
+    perimeter_worst                SHAP=+1.4445  val=1.683  (increases risk)
+    concave_pts_worst              SHAP=+1.1209  val=1.423  (increases risk)
+    concave_pts_mean               SHAP=+1.0754  val=2.068  (increases risk)
+    area_se                        SHAP=+1.0682  val=1.999  (increases risk)
+    radius_worst                   SHAP=+1.0350  val=1.885  (increases risk)
+
+  Role: correct_negative  |  Sample: 0
+  Actual: Benign  |  Predicted: Benign  |  Prob: 0.0009
+  Top contributions:
+    texture_worst                  SHAP=-2.0835  val=-1.636  (decreases risk)
+    perimeter_worst                SHAP=-1.2019  val=-0.707  (decreases risk)
+    texture_mean                   SHAP=-0.9923  val=-2.006  (decreases risk)
+    radius_worst                   SHAP=-0.9620  val=-0.721  (decreases risk)
+    area_se                        SHAP=-0.8936  val=-0.637  (decreases risk)
+
+  Role: misclassified  |  Sample: 16
+  Actual: Malignant  |  Predicted: Benign  |  Prob: 0.0021
+  Top contributions:
+    texture_worst                  SHAP=-2.3351  val=-0.831  (decreases risk)
+    compactness_se                 SHAP=-0.8645  val=-0.266  (decreases risk)
+    symmetry_worst                 SHAP=-0.7621  val=-0.515  (decreases risk)
+    area_se                        SHAP=-0.7469  val=-0.371  (decreases risk)
+    concave_pts_se                 SHAP=-0.6705  val=-0.396  (decreases risk)
+
+
+Finance — XGBoost Top-10 Global Features (mean |SHAP|)
+-------------------------------------------------------
+  person_income                       1.099495
+  loan_percent_income                 0.853419
+  loan_int_rate                       0.593125
+  person_home_ownership_OWN           0.435658
+  person_home_ownership_RENT          0.380289
+  loan_intent_VENTURE                 0.368734
+  loan_amnt                           0.277193
+  loan_grade_A                        0.270038
+  loan_grade_D                        0.244220
+  loan_intent_HOMEIMPROVEMENT         0.185956
+
+Finance — Local Examples
+-------------------------------------------------------
+  Role: correct_positive  |  Sample: 4
+  Actual: Default  |  Predicted: Default  |  Prob: 0.9331
+  Top contributions:
+    loan_int_rate                  SHAP=+1.4772  val=1.399  (increases risk)
+    loan_grade_D                   SHAP=+1.0647  val=1.000  (increases risk)
+    loan_intent_VENTURE            SHAP=-0.7327  val=1.000  (decreases risk)
+    loan_percent_income            SHAP=-0.5989  val=0.933  (decreases risk)
+    person_emp_length              SHAP=+0.4685  val=-0.696  (increases risk)
+
+  Role: correct_negative  |  Sample: 2
+  Actual: No Default  |  Predicted: No Default  |  Prob: 0.1935
+  Top contributions:
+    person_income                  SHAP=-1.1349  val=0.568  (decreases risk)
+    loan_percent_income            SHAP=-0.5562  val=-0.190  (decreases risk)
+    loan_amnt                      SHAP=+0.4247  val=0.865  (increases risk)
+    cb_person_default_on_file_N    SHAP=+0.2836  val=0.000  (increases risk)
+    loan_grade_C                   SHAP=-0.2781  val=1.000  (decreases risk)
+
+  Role: misclassified  |  Sample: 1
+  Actual: Default  |  Predicted: No Default  |  Prob: 0.4934
+  Top contributions:
+    person_home_ownership_RENT     SHAP=-1.3375  val=0.000  (decreases risk)
+    loan_percent_income            SHAP=+1.2787  val=1.401  (increases risk)
+    loan_intent_DEBTCONSOLIDATION  SHAP=+0.4685  val=1.000  (increases risk)
+    person_home_ownership_MORTGAGE SHAP=-0.3272  val=1.000  (decreases risk)
+    loan_amnt                      SHAP=+0.2129  val=4.047  (increases risk)
+

@@ -1,0 +1,18 @@
+Healthcare — Breast Cancer (brca.csv) Validation
+================================================
+Generated: 2026-10-13 19:31:09 UTC
+
+
+File: E:\SHAP-Explainable-ML\dataset\brca.csv
+
+Row count: 569 (expected 569)
+Target 'y': B=357 (expected 357), M=212 (expected 212)
+Unnamed index column(s) to drop: ['Unnamed: 0']
+Feature columns (excluding index and y): 30
+Missing values (features + y): 0
+Class-sorted in raw file: True (label block transitions: 1)
+
+Encoding plan (preprocessing): M -> 1, B -> 0.
+Split plan: stratified train/test with shuffle=True (required because file is sorted).
+
+Audit check: PASS

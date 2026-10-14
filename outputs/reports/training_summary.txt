@@ -1,0 +1,27 @@
+Stage 3 — Training Summary
+==========================
+Generated: 2026-10-13 19:36:37 UTC
+
+Healthcare results (held-out test set)
+---------------------------------------------
+  Model                        Acc   Prec    Rec     F1    AUC  CV-AUC
+  Logistic Regression       0.9737 0.9756 0.9524 0.9639 0.9954  0.9954±0.0048
+  XGBoost                   0.9825 1.0000 0.9524 0.9756 0.9917  0.9944±0.0034
+
+  Logistic Regression confusion matrix  TN=71 FP=1 FN=2 TP=40
+  XGBoost confusion matrix  TN=72 FP=0 FN=2 TP=40
+
+  Logistic Regression best params: {'class_weight': 'balanced', 'max_iter': 2000, 'solver': 'lbfgs'}
+  XGBoost best params: {'n_estimators': 377, 'max_depth': 7, 'learning_rate': 0.2587705143389706, 'subsample': 0.8523614272706045, 'colsample_bytree': 0.7201277922572297, 'min_child_weight': 1, 'scale_pos_weight': 1.6764705882352942, 'random_state': 42}
+
+Finance results (held-out test set)
+---------------------------------------------
+  Model                        Acc   Prec    Rec     F1    AUC  CV-AUC
+  Logistic Regression       0.8095 0.5449 0.7835 0.6428 0.8704  0.8706±0.0053
+  XGBoost                   0.9136 0.7918 0.8209 0.8061 0.9518  0.9497±0.0052
+
+  Logistic Regression confusion matrix  TN=4137 FP=928 FN=307 TP=1111
+  XGBoost confusion matrix  TN=4759 FP=306 FN=254 TP=1164
+
+  Logistic Regression best params: {'class_weight': 'balanced', 'max_iter': 2000, 'solver': 'lbfgs'}
+  XGBoost best params: {'n_estimators': 459, 'max_depth': 4, 'learning_rate': 0.11988347780940341, 'subsample': 0.9753037938856164, 'colsample_bytree': 0.9945105856161021, 'min_child_weight': 8, 'scale_pos_weight': 3.57336860670194, 'random_state': 42}
